@@ -161,19 +161,21 @@ int menu(int lin1, int col1, int qtd, char lista[3][40]){
 int main()
 {
     int opc;
-    char lista[5][40]={"Pizza de Frango", "Pizza Portuguesa", "Pizza Baiana", "Pizza de Brocolis", "Pizza de Calabresa"};
-    
+    char lista[5][40]={"Abrir Conta", "Depositar", "Sacar", "Transferir", "Consultar Saldo e Dados", "Atualizar Telefone e Agencia", "Listar Conta", "Encerrar Conta"};
+
     setlocale(LC_ALL,"");
     while(true){
        opc = menu(10,10,5,lista);
-    
+
+      
        if (opc==0){
        break;
        }
     
-        linhaCol(1,1);
+     /* linhaCol(1,1);
         textColor(WHITE, _RED);
-        printf("\nEscolheu a op��o %d", opc);
+        printf("\nEscolheu a opção %d", opc);
+     */
 
     }
   textColor(WHITE, _BLACK);
